@@ -1,0 +1,41 @@
+@import "../../scss/variable";
+@import "../../scss/fonts";
+
+
+.SearchBlock{
+  margin-top:120px;
+align-items: center;
+justify-content: center;
+  &__Title{
+margin-bottom:56px;
+  }
+  
+}
+.Search-bar{
+width: 100%;
+display: flex;
+align-items: center;
+background: rgba(255, 255, 255, 0.1);
+/* Gray/100 */
+max-width:800px;
+// height:72px;
+padding: 20px;
+border: 1px solid #EEF2F6;
+border-radius: 16px;
+  & input{
+background: transparent;
+flex:1;
+border:0;
+outline:none;
+    font-weight: 500;
+    color: rgb(22, 22, 22);
+  }
+  &__btn{
+background: $AkcentColor;
+border-radius: 40px;
+padding:12px;
+    & img{
+
+    }
+}
+}

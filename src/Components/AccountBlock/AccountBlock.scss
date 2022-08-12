@@ -1,0 +1,35 @@
+@import "../../scss/variable";
+@import "../../scss/fonts";
+
+.Account{
+  cursor: pointer;
+  display:flex;
+  &__icon{
+    width: 32px;
+height: 32px;
+    border: 2px solid #1F1F1F;
+    border-radius: 32px;
+  }
+ &__wrapper{
+margin-left:8px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 123% */
+  
+ }
+ &__name{
+
+  
+  color: #EAEAEA;
+ }
+ &__nick-name{
+ 
+  
+  color: #8E8E8E;
+ }
+  }
+
+  

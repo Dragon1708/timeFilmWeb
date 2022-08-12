@@ -1,0 +1,17 @@
+@import "../../scss/variable";
+@import "../../scss/fonts";
+
+
+.Home{
+ // width: 60%;
+  padding-left:25%;
+  &__title{
+    font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 54px;
+align-items: center;
+
+color: #FFFFFF;
+  }
+}

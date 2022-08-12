@@ -1,0 +1,19 @@
+@import "../../scss/variable";
+@import "../../scss/fonts";
+
+.MainButton{
+  background: linear-gradient(244.07deg, #FD6161 47.24%, #BA4274 120.34%);
+border-radius: 8px;
+
+padding: 12px 30px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height, or 133% */
+  
+  
+  color: #FFFFFF;
+}
+  

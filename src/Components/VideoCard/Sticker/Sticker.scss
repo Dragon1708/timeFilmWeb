@@ -1,0 +1,33 @@
+@import "../../../scss/variable";
+@import "../../../scss/fonts";
+
+
+.Sticker{
+
+
+    background: #1D1D27;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+margin-bottom: 4px;
+    &__container{
+        padding:10px;
+        display:flex;
+        align-items: center;
+    }
+    &__icon{
+margin-right:8px;
+    }
+    &__text{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+  
+        align-items: center;
+        text-align: center;
+        
+        color: #FFFFFF;
+        
+    }
+}

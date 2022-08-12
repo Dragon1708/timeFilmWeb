@@ -1,0 +1,26 @@
+@import "../../scss/variable";
+@import "../../scss/fonts";
+
+.CategoryCard{
+  padding:8px 16px;
+  background: #37252D;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 17px;
+
+  font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+
+/* Gray 6 */
+
+color: #F2F2F2;
+
+cursor: pointer;
+  &:hover{
+    background: #121212;
+    color: #FFFFFF;
+  }
+}

@@ -1,0 +1,17 @@
+@import "fonts";
+@import "variable";
+@import "zeroStyle";
+
+body {
+  margin: 0;
+  background-color: $BackgroundColor;
+  font-family: $fontName;
+  font-weight:300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

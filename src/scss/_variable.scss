@@ -1,0 +1,68 @@
+
+$BackgroundColor: #0D0D0D;
+$AkcentColor: #1E50FF;
+$OrangeAkcentColor: #FF6D00;
+
+$CardColor:#272D37;
+$TextGray:#ADB9C7;
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1160px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.outline-btn{
+    background:$BackgroundColor;
+    border: 1px solid $AkcentColor;
+    border-radius: 16px;
+    height:56px;
+    padding: 12px 16px;
+    
+    font-weight: 600;
+color: #FFFFFF;
+}
+.outline-btn-active{
+    background:$AkcentColor;
+}
+
+.outline-btn:hover {
+    background:$AkcentColor;
+}
+
+.outline-btn-active{
+    background:$AkcentColor;
+    border: 1px solid $AkcentColor;
+    border-radius: 16px;
+    height:56px;
+    padding: 12px 16px;
+    
+    font-weight: 600;
+color: #FFFFFF;
+
+}
+
+.paragraph-text{
+    font-weight: 700;
+    font-size: 48px;
+line-height: 64px;
+color: #FFFFFF;
+}
+
+.description-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: left;
+    color: $TextGray;
+}
+
+.label-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $TextGray;
+
+}

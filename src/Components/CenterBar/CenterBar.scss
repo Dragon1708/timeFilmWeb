@@ -1,0 +1,19 @@
+@import "../../scss/variable";
+@import "../../scss/fonts";
+
+
+.CenterBlock{
+margin-right: 40px;
+justify-content: space-between;
+  &__header{
+
+  }
+  &__notification-btn{
+width: 40px;
+height: 40px;
+  }
+
+  &__title{
+margin-top: 40px;
+  }
+}

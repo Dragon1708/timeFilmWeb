@@ -1,0 +1,156 @@
+@import "../scss/variable";
+@import "../scss/fonts";
+
+
+.product{
+display: flex;
+margin-top:88px;
+&__img{
+width:585px;
+height:508px;
+object-fit: cover;
+border-radius: 24px;
+}
+&__description-wrapper{
+  margin-left: 40px;
+}
+&__title{
+  text-align: left;
+  margin-bottom: 24px;
+}
+&__mini-description{
+  margin-bottom: 24px;
+}
+&__buy-btn{
+  padding:16px;
+  display:block;
+width:275px;
+border-radius: 8px;
+
+background:$AkcentColor;
+border: 1px solid $AkcentColor;
+height:56px;
+padding: 16px;
+
+font-weight: 600;
+color: #FFFFFF;
+&:hover {
+  background:$BackgroundColor;
+
+}
+}
+&__creator-wrapper{
+  padding:16px;
+  background: $CardColor;
+  border-radius: 16px;
+  margin-bottom: 56px;
+}
+
+}
+
+.price{
+margin-bottom: 40px;
+  &__label{
+// float:left;
+  }
+  &__count{
+    margin-top:8px;
+    text-align: left;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+
+text-transform: capitalize;
+
+color: #FFFFFF;
+  }
+}
+
+
+.data{
+margin-top: 72px;
+padding-left: 118px;
+padding-right: 118px;
+  &__toogle{
+    display:flex;
+    justify-content: space-between;
+   
+  }
+  &__description-btn{
+    display: block;
+  }
+  &__offers-btn{
+    display: block;
+    padding:16px 40px;
+    background:$BackgroundColor;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    
+    color: $TextGray;
+    &:hover {
+      background:$BackgroundColor;
+      border: 1px solid $AkcentColor;
+      border-radius: 16px;
+  }
+  }
+  display: block;
+  &__history-btn{
+    background:$BackgroundColor;
+    padding:16px 40px;
+    font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+
+
+color:$TextGray;
+&:hover {
+  background:$BackgroundColor;
+  border: 1px solid $AkcentColor;
+  border-radius: 16px;
+}
+  }
+  &__details{
+margin-top: 40px;
+  }
+  &__description{
+
+  }
+}
+
+.table{
+
+  margin-top: 24px;
+&__left{
+  margin-right:30px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  
+  
+  /* Gray/200 */
+  
+  color: #FFFFFF;
+}
+&__right{
+  text-align: right;
+}
+}
+
+.another{
+  &__toggle{
+
+  }
+  &__title{
+
+  }
+  &__viewAll-btn{
+
+  }
+  &__product{
+
+  }
+}

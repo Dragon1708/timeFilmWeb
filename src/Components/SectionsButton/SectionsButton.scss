@@ -1,0 +1,55 @@
+@import "../../scss/variable";
+@import "../../scss/fonts";
+
+.SectionsButton{
+display: flex;
+margin-top: 14px;
+height: 44px;
+align-items: center;
+  &__icon{
+    margin-left:12px;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+  }
+
+  &__wrapper{
+    display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+  }
+  &__title{
+    margin-left: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
+    
+    
+    color: #EAEAEA;
+    
+  }
+  &__count{
+
+    background: #EAEAEA;
+    border-radius: 20px;
+padding:4px;
+    margin-right: 36px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
+    
+    
+    color: #080808;;
+  }
+
+  &:hover{
+    background: #201E27;
+border-radius: 8px;
+  }
+}
+  

@@ -1,0 +1,44 @@
+@import "../../scss/variable";
+@import "../../scss/fonts";
+
+.sideBar{
+  background: #080808;
+padding-left:25px;
+position: fixed;
+width: 25%;
+  &__Logo{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  &__main-toggle{
+margin-top: 50px;
+padding-left: 25px;
+padding-right: 25px;
+  }
+  &__setting-toggle{
+    margin-top: 400px;
+   
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  &__label{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    /* identical to box height, or 154% */
+    
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+    color: #9A9A9A;
+  }
+
+  &__btn{
+    margin-top:12px;
+    margin-bottom:80px;
+  }
+}
+  
+ 

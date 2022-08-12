@@ -1,0 +1,13 @@
+@import "../../scss/variable";
+@import "../../scss/fonts";
+
+
+.Register{
+margin-top:30px;
+  &__wrapper{
+padding:40px;
+    background: #369FFF;
+
+    border-radius: 20px;
+  }
+}

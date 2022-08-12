@@ -1,0 +1,30 @@
+@import "./scss/variable";
+
+.App {
+  // display: grid;
+  // grid-template-columns: 0.5fr 2fr 0.8fr;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.grid{
+ // display: grid;
+ // grid-template-columns: 0.3fr 1fr ;
+ display: flex;
+ justify-content: space-between;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

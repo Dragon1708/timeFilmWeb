@@ -1,0 +1,16 @@
+@import "../scss/variable";
+@import "../scss/fonts";
+
+
+.Cart{
+  &__total{
+    margin-top:80px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__accent-text{
+    color: #1E50FF;
+  }
+}
