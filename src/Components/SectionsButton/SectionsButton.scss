@@ -46,10 +46,14 @@ padding:4px;
     
     color: #080808;;
   }
-
+  
   &:hover{
     background: #201E27;
 border-radius: 8px;
   }
 }
-  
+
+.SB-active{
+  background: #201E27;
+  border-radius: 8px;
+}

@@ -5,27 +5,33 @@ import dotsVertical from "../../Assets/icons/dots-vertical.svg";
 import eye from "../../Assets/icons/eye.svg";
 import "./VideoCard.scss";
 
-export default function VideoCard(){
- 
+export default function VideoCard({data}){
+ const {imgURL, title, timeCode, currentEpisode}=data
+
+ const [showSetting, SetShowSetting]=React.useState(false)
+
+
+
     return (
        <div className="VideoCard">
           <div className="VideoCard__image-wrapper">
-          <img className="VideoCard__img" src={"https://img1.ak.crunchyroll.com/i/spire1/58233f610abc458778ac5726573c8e0a1645014684_main.jpg"} alt="image1" />
+          <img className="VideoCard__img" src={imgURL!==''? imgURL:"https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-13.png"} alt="image1" />
       { true &&   <div className="VideoCard__stickers">
-          <Sticker isTime={true}/>
-       <Sticker />
+          <Sticker 
+          timeCode={timeCode}/>
+       <Sticker currentEpisode={currentEpisode}/>
           </div>}
-         {false && <div className="VideoCard__settings">
+         {showSetting && <div className="VideoCard__settings">
             <ul className="VideoCard__settings-wrapper">
-                <li className="VideoCard__setting-item">
+                <li className="VideoCard__settings-item">
                 <img className="VideoCard__icon" src={eye} alt="image1" />
                 <p>Send To bookmark</p>
                 </li>
-                <li className="VideoCard__setting-item">
+                <li className="VideoCard__settings-item">
                 <img className="VideoCard__icon" src={eye} alt="image1" />
                 <p>Send To views</p>
                 </li>
-                <li className="VideoCard__setting-item">
+                <li className="VideoCard__settings-item">
                 <img className="VideoCard__icon" src={eye} alt="image1" />
                 <p>Delete</p>
                 </li>
@@ -33,8 +39,8 @@ export default function VideoCard(){
           </div>}
           </div>
    <div className="VideoCard__bottom">
-   <h2 className="VideoCard__title">Wonder Egg Priores</h2>
-   <button className="VideoCard__toggle">
+   <h2 className="VideoCard__title">{title}</h2>
+   <button onClick={()=>SetShowSetting(!showSetting)} className="VideoCard__toggle">
    <img className="VideoCard__icon" src={dotsVertical} alt="dotsVertical" />
    </button>
    </div>

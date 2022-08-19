@@ -1,0 +1,11 @@
+ {
+    "id": "02",
+    "imgURL": "https://m.media-amazon.com/images/M/MV5BODZlYjQ4NzYtZTg1MC00NGY4LTg4NjQtNGE3ZjRkMjk3YjMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1029_.jpg",
+    "title": "Batman 2022", 
+    "currentEpisode": [1 //номер сезона, 8 //номер эпизода], 
+    "timeCode": [0, 41, 10],
+    "AllEpisodes": [[12 //колличество серий в сезоне, 8, 11] //массив всех сезонов,
+     22 //общее колличество серий из всех сезонов],
+    "categoriesID": [0, 1] //массив категорий,
+    "updatedTime": "23946732932"
+  }

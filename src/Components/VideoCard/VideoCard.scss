@@ -26,12 +26,34 @@ cursor: pointer;
 position: absolute;
     }
     &__settings{
-
+        position: absolute;
+        top:0;
+        padding: 20px;
+     
         &-wrapper{
 
         }
         &-item{
+            margin-top: 8px;
+            align-items:center;
+            display:flex;
+            background: #1D1D27;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
 
+        & p{
+            margin-left: 8px;
+            font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+align-items: center;
+text-align: center;
+
+color: #F2F2F2;
+
+        }
         }
     }
     &__icon{
@@ -43,6 +65,7 @@ position: absolute;
 margin-top: 8px;
 display: flex;
 align-items: center;
+justify-content: space-between;
     }
     &__title{
         font-style: normal;
@@ -53,6 +76,6 @@ align-items: center;
         color: #FFFFFF;
     }
     &__toggle{
-
+background: none;
     }
 }
