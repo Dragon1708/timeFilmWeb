@@ -20,6 +20,9 @@ export const VideosSlice = createSlice({
     SetWatching: (state, action) => {
         state.watching=action.payload
     },
+    AddWatching: (state, action) => {
+      state.watching.push(action.payload)
+  },
     SetBookmark: (state, action) => {
       state.bookmark=action.payload
   },
@@ -29,6 +32,7 @@ export const VideosSlice = createSlice({
   },
 })
 
-export const {SetVideos, SetWatching, SetBookmark, SetViewed } = VideosSlice.actions
+export const {SetVideos, SetWatching, 
+  SetBookmark, SetViewed, AddWatching } = VideosSlice.actions
 
 export default VideosSlice.reducer

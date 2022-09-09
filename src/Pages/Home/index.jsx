@@ -9,9 +9,8 @@ import "./Home.scss";
 export default function Home() {
   const categories =useSelector(state=>state.CategoriesReducer)
   const videos =useSelector(state=>state.VideosReducer.watching)
-   console.log(categories)
-
-  // console.log(DB.categories.map((el)=>{
+   
+  console.log(videos, "Homee")
   //   return DB.videos.filter((eli)=>eli.id==="03")
   // }))
   
@@ -22,13 +21,16 @@ export default function Home() {
   return (
     <section className="Home">
       <h1 className="Home__title">Recent</h1>
-     <FeaturedBlock data={DB.watch[0]}/>
+     <FeaturedBlock data={DB[0].watch[0]}/>
      {categories[0] && categories.map((el)=>{
-     return <CategoryVideoList key={el.id} 
-     data={el} 
-     videos={el.VideosID.watch.map((abo)=>{
-      return videos.find((ind)=>ind.id===abo)
-     })}/>
+      console.log(el)
+      if (el.id!=='00') {
+        return <CategoryVideoList key={el.id} 
+        category={el} 
+        videos={videos.filter(index=>index.categoriesID.includes(el.id) )}
+        />
+      }
+    
      })
 
      }

@@ -4,11 +4,11 @@ import React from "react";
 import "./CategoryCard.scss";
 
 
-export default function CategoryCard(){
+export default function CategoryCard({selectedClass, data, addSelectedCategories}){
 
     return (
-      <a className="CategoryCard">
-   Design
-    </a>
+      <button type="button"  className={selectedClass} onClick={()=>addSelectedCategories(data.id)}>
+ {data.title}
+    </button>
     )
 }

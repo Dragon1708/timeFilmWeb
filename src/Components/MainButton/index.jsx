@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link} from "react-router-dom";
 
 import "./MainButton.scss";
 
@@ -7,8 +7,9 @@ import "./MainButton.scss";
 export default function MainButton(){
 
     return (
-      <a href="#" className="MainButton">
-      Add Your Video
-      </a>
+    
+           <Link className="MainButton" to="/AddVideo"> Add Your Video</Link>
+ 
+    
     )
 }

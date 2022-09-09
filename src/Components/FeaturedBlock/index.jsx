@@ -19,8 +19,8 @@ return <li><CategoryCard/></li>
     })
 
     } */}
-<li><CategoryCard/></li>
-<li><CategoryCard/></li>
+{/* <li><CategoryCard/></li>
+<li><CategoryCard/></li> */}
 </ul>
 <div className="FeaturedBlock__time-wrapper">
     <div className="time-wrapper">

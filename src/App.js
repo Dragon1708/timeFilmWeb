@@ -2,7 +2,7 @@ import React from "react";
 import './App.scss';
 import axios from "axios";
 import { useDispatch, useSelector } from 'react-redux'
-import { SetVideos, SetBookmark } from './redux/slices/VideosSlice'
+import { SetViewed, SetBookmark, SetWatching } from './redux/slices/VideosSlice'
 import { SetCategories} from './redux/slices/Categories'
 
 import { Routes, Route} from "react-router-dom";
@@ -11,27 +11,41 @@ import SideBar from "./Components/SideBar";
 
 import Home from "./Pages/Home";
 import Bookmark from "./Pages/Bookmark";
-import Login from "./Pages/Bookmark";
+import AddVideo from "./Pages/AddVideo";
+import ChangeVideo from "./Pages/ChangeVideo";
 
 export const AppContext=React.createContext()
 
 function App() {
   const [searchVal, SetSearchVal]= React.useState('')
   const dispatch=useDispatch()
+const api='https://62fa78e23c4f110faa9a0471.mockapi.io/'
 
  React.useEffect(() => {
-  axios.get('https://62fa78e23c4f110faa9a0471.mockapi.io/watch').then(res=>{
+  axios.get(api+'watch').then(res=>{
 
 // dispatch(SetWatching(res.data[0].watch))
-dispatch(SetVideos(res.data[0]))
-dispatch(SetCategories(res.data[0].categories))
+dispatch(SetWatching(res.data))
 }
 )
-  });
+axios.get(api+'bookmark').then(res=>{
+  dispatch(SetBookmark(res.data))
+  }
+  )
+  axios.get(api+'viewed').then(res=>{
+    dispatch(SetViewed(res.data))
+    }
+    )
+axios.get(api+'categories').then(res=>{
+  dispatch(SetCategories(res.data))
+  }
+  )
+  }, []);
 
   return (
     <div className="App">
-      <AppContext.Provider value={{searchVal,SetSearchVal }}>
+     
+     <AppContext.Provider value={{searchVal,SetSearchVal }}>
       <div className="grid">
       <SideBar />
       <Routes>
@@ -42,11 +56,11 @@ dispatch(SetCategories(res.data[0].categories))
 
 }/> */}
 <Route path="/bookmark" element={<Bookmark/>}/>
-<Route path="/Login" element={<Login/>}/>
+<Route path="/AddVideo" element={<AddVideo/>}/>
+<Route path="/ChangeVideo" element={<ChangeVideo/>}/>
       </Routes>
       </div>
       </AppContext.Provider>
-  
     </div>
   );
 }

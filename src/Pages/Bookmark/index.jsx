@@ -8,7 +8,7 @@ import "./bookmark.scss";
 export default function Bookmark() {
   const categories =useSelector(state=>state.CategoriesReducer)
   const videos =useSelector(state=>state.VideosReducer.bookmark)
-  console.log(categories)
+ // console.log(videos)
   return (
     <section className="bookmark">
        {/* <Link to="/">Home</Link> */}
@@ -17,13 +17,9 @@ export default function Bookmark() {
      {categories[0] && 
      categories.map((el) => {
         return <CategoryVideoList key={el.id} 
-        data={el} 
-        videos={
-          el.VideosID.bookmark.map((item)=>{
-            // console.log(videos[0])
-            return videos.find((ind)=>ind.id===item)
-          })
-        }/>
+        category={el} 
+     videos={videos.filter(index=>index.categoriesID.includes(el.id) )}
+     />
      
      }
      )

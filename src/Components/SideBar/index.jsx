@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 import Search from "../Search";
 import SectionsButton from "../SectionsButton";
+import CategoriesButton from "../CategoriesButton";
 import MainButton from "../MainButton";
 import AccountBlock from "../AccountBlock";
 
@@ -17,7 +18,7 @@ export default function SideBar() {
   const dispatch = useDispatch();
 
   const handleActiveSection = (index) => {
-    SetActiveSection(index.name);
+    SetActiveSection(index.title);
   };
  
   const Sections = [
@@ -31,8 +32,9 @@ export default function SideBar() {
       title: "Viewed",
       DBname: "viewed",
     },
+    
   ];
-  const [activeSection, SetActiveSection] = React.useState(Sections[0].name);
+  const [activeSection, SetActiveSection] = React.useState(Sections[0].title);
   return (
     <div className="sideBar">
       <a href="#" className="sideBar__Logo">
@@ -40,13 +42,13 @@ export default function SideBar() {
       </a>
       <ul className="sideBar__menu">
         <li>
-          <Search />{" "}
+          <Search />
         </li>
         {Sections.map((i) => (
           <li onClick={()=>handleActiveSection(i)}>
             <SectionsButton
               selectedClass={
-                activeSection === i.name
+                activeSection === i.title
                   ? "SectionsButton SB-active"
                   : "SectionsButton"
               }
@@ -58,16 +60,16 @@ export default function SideBar() {
         <li className="sideBar__label"> MY CATEGORIES </li>
         {categories[0] &&
           categories.map((el) => {
+          
             return (
-              <li onClick={() => SetActiveSection(el)}>
-                <SectionsButton
+              <li onClick={()=>handleActiveSection(el)}>
+                <CategoriesButton
                   selectedClass={
-                    activeSection === el
+                    activeSection === el.title
                       ? "SectionsButton SB-active"
                       : "SectionsButton"
                   }
                   data={el}
-                  id={el.id}
                 />
               </li>
             );

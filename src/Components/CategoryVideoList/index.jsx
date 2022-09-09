@@ -1,19 +1,20 @@
 import React from "react";
 
 import VideoCard from "../VideoCard";
-import { useSelector } from 'react-redux'
+
 
 
 import "./CategoryVideoList.scss";
 
-export default function CategoryVideoList({data, videos}){
- // const videosByCategory =useSelector(state=>state.VideosReducer)
- console.log(videos, "====")
+export default function CategoryVideoList({category, videos}){
+
+
+
     return (
       <div className="CategorySection">
         <div className="CategorySection__head-wrapper">
         <h2 className="CategorySection__title">
-        {data.Name}
+        {category.title}
         </h2>
         <button className="CategorySection__addVideo-btn">
       + addVideo

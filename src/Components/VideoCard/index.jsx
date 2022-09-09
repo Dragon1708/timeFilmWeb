@@ -3,19 +3,29 @@ import React from "react";
 import Sticker from "./Sticker";
 import dotsVertical from "../../Assets/icons/dots-vertical.svg";
 import eye from "../../Assets/icons/eye.svg";
+import { useNavigate  } from "react-router-dom";
 import "./VideoCard.scss";
 
 export default function VideoCard({data}){
  const {imgURL, title, timeCode, currentEpisode}=data
-
  const [showSetting, SetShowSetting]=React.useState(false)
 
+ const navigate = useNavigate();
+
+ const updateVideo=() => {
+   console.log(data.id)
+ navigate('Details', data.id);
+ }
 
 
     return (
        <div className="VideoCard">
-          <div className="VideoCard__image-wrapper">
-          <img className="VideoCard__img" src={imgURL!==''? imgURL:"https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-13.png"} alt="image1" />
+          <div className="VideoCard__image-wrapper"  >
+          <img className="VideoCard__img" 
+        onClick={updateVideo}
+          src={imgURL!==''? 
+          imgURL:"https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-13.png"} 
+          alt="image1" />
       { true &&   <div className="VideoCard__stickers">
           <Sticker 
           timeCode={timeCode}/>

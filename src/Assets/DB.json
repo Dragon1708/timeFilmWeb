@@ -1,113 +1,264 @@
-{
- "watch":[
+[
   {
-    "id": "001",
-    "imgURL": "",
-    "title": "Batman 2022",
-    "currentEpisode": [1, 8],
-    "timeCode": [0, 41, 10],
-    "AllEpisodes": [[12 , 8, 11], 22 ],
-    "updatedTime": "23946732932"
-  },
-  {
-    "id": "02",
-    "imgURL": "https://m.media-amazon.com/images/M/MV5BODZlYjQ4NzYtZTg1MC00NGY4LTg4NjQtNGE3ZjRkMjk3YjMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1029_.jpg",
-    "title": "Batman20",
-    "currentEpisode": [1, 8],
-    "timeCode": [0, 41, 10],
-    "AllEpisodes": [[12 , 8, 11], 22 ],
-    "updatedTime": "23946732932"
-  },
-  {
-    "id": "03",
-    "imgURL": "https://m.media-amazon.com/images/M/MV5BODZlYjQ4NzYtZTg1MC00NGY4LTg4NjQtNGE3ZjRkMjk3YjMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1029_.jpg",
-    "title": "Batman44",
-    "currentEpisode": [1, 8],
-    "timeCode": [0, 41, 10],
-    "AllEpisodes": [[12 , 8, 11], 22 ],
-    "updatedTime": "23946732932"
-  },
-  {
-    "id": "04",
-    "imgURL": "https://m.media-amazon.com/images/M/MV5BODZlYjQ4NzYtZTg1MC00NGY4LTg4NjQtNGE3ZjRkMjk3YjMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1029_.jpg",
-    "title": "Ban 2022",
-    "currentEpisode": [1, 8],
-    "timeCode": [0, 41, 10],
-    "AllEpisodes": [[12 , 8, 11], 22 ],
-    "updatedTime": "23946732932"
-  }
- ],
- "bookmark":[
-  {
-    "id": "01",
-    "imgURL": "https://m.media-amazon.com/images/M/MV5BODZlYjQ4NzYtZTg1MC00NGY4LTg4NjQtNGE3ZjRkMjk3YjMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1029_.jpg",
-    "title": "Batman 2022",
-    "currentEpisode": [1, 8],
-    "timeCode": [0, 41, 10],
-    "AllEpisodes": [[12 , 8, 11], 22 ],
-    "categoriesID": [ 1],
-    "updatedTime": "23946732932"
-  },
-  {
-    "id": "02",
-    "imgURL": "https://m.media-amazon.com/images/M/MV5BODZlYjQ4NzYtZTg1MC00NGY4LTg4NjQtNGE3ZjRkMjk3YjMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1029_.jpg",
-    "title": "Batman 2022",
-    "currentEpisode": [1, 8],
-    "timeCode": [0, 41, 10],
-    "AllEpisodes": [[12 , 8, 11], 22 ],
-    "categoriesID": [0, 1],
-    "updatedTime": "23946732932"
-  }
- ],
- "viewed":[
-  {
-    "id": "01",
-    "imgURL": "",
-    "title": "Batman 2022",
-    "currentEpisode": [1, 8],
-    "timeCode": [0, 41, 10],
-    "AllEpisodes": [[12 , 8, 11], 22 ],
-    "categoriesID": [0, 1],
-    "updatedTime": "23946732932"
-  },
-  {
-    "id": "02",
-    "imgURL": "https://m.media-amazon.com/images/M/MV5BODZlYjQ4NzYtZTg1MC00NGY4LTg4NjQtNGE3ZjRkMjk3YjMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1029_.jpg",
-    "title": "Batman 2022",
-    "currentEpisode": [1, 8],
-    "timeCode": [0, 41, 10],
-    "AllEpisodes": [[12 , 8, 11], 22 ],
-    "categoriesID": [0, 1],
-    "updatedTime": "23946732932"
-  }
- ],
-
- "categories":[
-  {
-    "id": "01",
-    "Name": "Youtube",
-    "VideosID": {
-"watch": ["001", "02", "03"],
-"viewed": [],
-"bookmark": []
+   "watch": [
+    {
+     "id": "001",
+     "imgURL": "",
+     "title": "Batman 2022",
+     "currentEpisode": [
+      1,
+      8
+     ],
+     "timeCode": [
+      0,
+      41,
+      10
+     ],
+     "categoriesID": [
+      "02"
+     ],
+     "AllEpisodes": [
+      [
+       12,
+       8,
+       11
+      ],
+      22
+     ],
+     "updatedTime": 23946732932
+    },
+    {
+     "id": "02",
+     "imgURL": "https://m.media-amazon.com/images/M/MV5BODZlYjQ4NzYtZTg1MC00NGY4LTg4NjQtNGE3ZjRkMjk3YjMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1029_.jpg",
+     "title": "Batman20",
+     "currentEpisode": [
+      1,
+      8
+     ],
+     "timeCode": [
+      0,
+      41,
+      10
+     ],
+     "categoriesID": [
+      "01",
+      "02"
+     ],
+     "AllEpisodes": [
+      [
+       12,
+       8,
+       11
+      ],
+      22
+     ],
+     "updatedTime": 23946732932
+    },
+    {
+     "id": "03",
+     "imgURL": "https://m.media-amazon.com/images/M/MV5BODZlYjQ4NzYtZTg1MC00NGY4LTg4NjQtNGE3ZjRkMjk3YjMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1029_.jpg",
+     "title": "Batman44",
+     "currentEpisode": [
+      1,
+      8
+     ],
+     "timeCode": [
+      0,
+      41,
+      10
+     ],
+     "categoriesID": [
+      "01"
+     ],
+     "AllEpisodes": [
+      [
+       12,
+       8,
+       11
+      ],
+      22
+     ],
+     "updatedTime": 23946732932
+    },
+    {
+     "id": "04",
+     "imgURL": "https://m.media-amazon.com/images/M/MV5BODZlYjQ4NzYtZTg1MC00NGY4LTg4NjQtNGE3ZjRkMjk3YjMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1029_.jpg",
+     "title": "Ban 2022",
+     "currentEpisode": [
+      1,
+      8
+     ],
+     "timeCode": [
+      0,
+      41,
+      10
+     ],
+     "categoriesID": [
+      "02"
+     ],
+     "AllEpisodes": [
+      [
+       12,
+       8,
+       11
+      ],
+      22
+     ],
+     "updatedTime": 23946732932
     }
-  },
-  {
-    "id": "02",
-    "Name": "Films",
-    "VideosID": {
-      "watch": ["001",  "04", "03"],
-      "viewed": [],
-      "bookmark": []
-          }
-  }
- ],
-
-
- "account": {
+   ],
+   "bookmark": [
+    {
+     "id": "01",
+     "imgURL": "https://img1.ak.crunchyroll.com/i/spire1/58233f610abc458778ac5726573c8e0a1645014684_main.jpg",
+     "title": "Lykoris lekoril",
+     "currentEpisode": [
+      1,
+      8
+     ],
+     "timeCode": [
+      0,
+      41,
+      10
+     ],
+     "AllEpisodes": [
+      [
+       12,
+       8,
+       11
+      ],
+      22
+     ],
+     "categoriesID": [
+      "01",
+      "02"
+     ],
+     "updatedTime": 23946732932
+    },
+    {
+     "id": "02",
+     "imgURL": "https://m.media-amazon.com/images/M/MV5BODZlYjQ4NzYtZTg1MC00NGY4LTg4NjQtNGE3ZjRkMjk3YjMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1029_.jpg",
+     "title": "Batman 2022",
+     "currentEpisode": [
+      1,
+      8
+     ],
+     "timeCode": [
+      0,
+      41,
+      10
+     ],
+     "AllEpisodes": [
+      [
+       12,
+       8,
+       11
+      ],
+      22
+     ],
+     "categoriesID": [
+      "01",
+      "02"
+     ],
+     "updatedTime": 23946732932
+    },
+    {
+     "id": "03",
+     "imgURL": "https://m.media-amazon.com/images/M/MV5BODZlYjQ4NzYtZTg1MC00NGY4LTg4NjQtNGE3ZjRkMjk3YjMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1029_.jpg",
+     "title": "Batman44",
+     "currentEpisode": [
+      1,
+      8
+     ],
+     "timeCode": [
+      0,
+      41,
+      10
+     ],
+     "AllEpisodes": [
+      [
+       12,
+       8,
+       11
+      ],
+      22
+     ],
+     "categoriesID": [
+      "02"
+     ],
+     "updatedTime": 23946732932
+    }
+   ],
+   "viewed": [
+    {
+     "id": "01",
+     "imgURL": "",
+     "title": "Batman 2022",
+     "currentEpisode": [
+      1,
+      8
+     ],
+     "timeCode": [
+      0,
+      41,
+      10
+     ],
+     "AllEpisodes": [
+      [
+       12,
+       8,
+       11
+      ],
+      22
+     ],
+     "categoriesID": [
+      0,
+      1
+     ],
+     "updatedTime": 23946732932
+    },
+    {
+     "id": "02",
+     "imgURL": "https://m.media-amazon.com/images/M/MV5BODZlYjQ4NzYtZTg1MC00NGY4LTg4NjQtNGE3ZjRkMjk3YjMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1029_.jpg",
+     "title": "Batman 2022",
+     "currentEpisode": [
+      1,
+      8
+     ],
+     "timeCode": [
+      0,
+      41,
+      10
+     ],
+     "AllEpisodes": [
+      [
+       12,
+       8,
+       11
+      ],
+      22
+     ],
+     "categoriesID": [
+      0,
+      1
+     ],
+     "updatedTime": 23946732932
+    }
+   ],
+   "categories": [
+    {
+     "id": "01",
+     "title": "YouTube"
+    },
+    {
+     "id": "02",
+     "title": "Films"
+    }
+   ],
+   "account": {
     "id": "01",
     "login": "@presio",
     "Name": "Presio Winso"
+   }
   }
- 
-}
+ ]
