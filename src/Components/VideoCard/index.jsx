@@ -4,17 +4,20 @@ import Sticker from "./Sticker";
 import dotsVertical from "../../Assets/icons/dots-vertical.svg";
 import eye from "../../Assets/icons/eye.svg";
 import { useNavigate  } from "react-router-dom";
+import { useDispatch } from 'react-redux'
+import { SetCurrentVideo } from '../../redux/slices/VideosSlice'
 import "./VideoCard.scss";
 
 export default function VideoCard({data}){
  const {imgURL, title, timeCode, currentEpisode}=data
  const [showSetting, SetShowSetting]=React.useState(false)
-
+ const dispatch=useDispatch()
  const navigate = useNavigate();
 
  const updateVideo=() => {
-   console.log(data.id)
- navigate('Details', data.id);
+   console.log(data)
+   dispatch(SetCurrentVideo(data))
+ navigate('/ChangeVideo');
  }
 
 

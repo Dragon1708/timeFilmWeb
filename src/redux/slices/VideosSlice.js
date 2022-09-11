@@ -4,18 +4,15 @@ const initialState = {
  watching:[],
  bookmark:[],
  viewed:[],
+ currentVideo:{},
 }
 
 export const VideosSlice = createSlice({
   name: 'Videos',
   initialState,
   reducers: {
-    SetVideos: (state, action) => {
-     return {
-        watching:action.payload.watch,
-        bookmark:action.payload.bookmark,
-        viewed:action.payload.viewed,
-      }
+    SetCurrentVideo: (state, action) => {
+      state.currentVideo=action.payload
   },
     SetWatching: (state, action) => {
         state.watching=action.payload
@@ -32,7 +29,7 @@ export const VideosSlice = createSlice({
   },
 })
 
-export const {SetVideos, SetWatching, 
+export const {SetCurrentVideo, SetWatching, 
   SetBookmark, SetViewed, AddWatching } = VideosSlice.actions
 
 export default VideosSlice.reducer

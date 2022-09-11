@@ -13,10 +13,12 @@ import Home from "./Pages/Home";
 import Bookmark from "./Pages/Bookmark";
 import AddVideo from "./Pages/AddVideo";
 import ChangeVideo from "./Pages/ChangeVideo";
+import Step2 from "./Pages/ChangeVideo/Steps/Step2";
 
 export const AppContext=React.createContext()
 
 function App() {
+
   const [searchVal, SetSearchVal]= React.useState('')
   const dispatch=useDispatch()
 const api='https://62fa78e23c4f110faa9a0471.mockapi.io/'
@@ -58,6 +60,7 @@ axios.get(api+'categories').then(res=>{
 <Route path="/bookmark" element={<Bookmark/>}/>
 <Route path="/AddVideo" element={<AddVideo/>}/>
 <Route path="/ChangeVideo" element={<ChangeVideo/>}/>
+  {/* <Route path="/ChangeVideo/Step2" element={<Step2/>}/> */}
       </Routes>
       </div>
       </AppContext.Provider>

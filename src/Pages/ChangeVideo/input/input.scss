@@ -1,0 +1,13 @@
+
+
+.text-input{
+  padding: 8px;
+
+  background: rgba(43, 43, 53, 0.7);
+  backdrop-filter: blur(20px);
+  /* Note: backdrop-filter has minimal browser support */
+  height:50px;
+ width:90px;
+  border-radius: 8px;
+  color: #FFFFFF;
+}

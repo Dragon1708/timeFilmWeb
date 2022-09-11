@@ -1,0 +1,23 @@
+@import "../../scss/variable";
+@import "../../scss/fonts";
+
+.submit-btn{
+  position: absolute;
+  cursor: pointer;
+  right: -20px;
+  bottom: 20px;
+      width: 300px;
+  height: 85px;
+  background: linear-gradient(244.07deg, #FD6161 47.24%, #BA4274 120.34%);
+  border-radius: 22px;
+  
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #FFFFFF;
+}
